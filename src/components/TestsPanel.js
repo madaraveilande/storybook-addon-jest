@@ -22,6 +22,7 @@ const TestsPanel = ({ tests }) => {
     <div className="markdown-body" style={style}>
       {tests.map(({ name, result }) => {
         if (!result) {
+          debugger
           return (
             <section key={name}>
               <header style={{ display: 'flex', alignItems: 'center' }}>
